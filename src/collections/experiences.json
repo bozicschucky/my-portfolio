@@ -1,23 +1,30 @@
 [
-	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
-	},
-	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
-	},
-	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
-	}
+  {
+    "dates": "02/2023 – 06/2023",
+    "role": "Full stack developer (Remote)",
+    "company": "KORAL APS, Copenhagen, Denmark",
+    "description": "Working on the core front-end project, as well as the chrome extension that consumes data generated from the frontend.",
+    "logo": "/assets/images/experiences/koral.png"
+  },
+  {
+    "dates": "04/2022 – 10/2022",
+    "role": "Full Stack Developer",
+    "company": "PESAMONI LTD, Kampala, Uganda (Hybrid)",
+    "description": "Built frontend client to consume backend data provided through internal APIs.",
+    "logo": "/assets/images/experiences/pesamoni.jpeg"
+  },
+  {
+    "dates": "09/2019 – 09/2021",
+    "role": "Full Stack Developer",
+    "company": "COBBLESTONE ENERGY, London, United Kingdom (Hybrid)",
+    "description": "Worked on both the backend and frontend of the internal projects.",
+    "logo": "/assets/images/experiences/cobble.jpeg"
+  },
+  {
+    "dates": "09/2018 – 09/2019",
+    "role": "Full Stack Developer",
+    "company": "ANDELA, Kampala, Uganda (Onsite)",
+    "description": "Worked on both the backend and frontend of the internal projects.",
+    "logo": "/assets/images/experiences/andela.jpeg"
+  }
 ]
