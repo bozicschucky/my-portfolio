@@ -54,6 +54,8 @@ const feed = "https://feed.miantiao.me/";
               Send me a Message
             </h2>
           </div>
+          <div id="flash-message" class="hidden p-4 mb-4 text-sm rounded-md">
+          </div>
           <div class="flex flex-col items-center w-full mt-4 space-y-3">
             <input
               type="email"
@@ -89,32 +91,60 @@ const feed = "https://feed.miantiao.me/";
 
     const form = event.target;
     const formData = new FormData(form);
+    const API_URL =
+      "https://o9703vefi2.execute-api.us-east-1.amazonaws.com/dev/messages";
     const data = {
-      email: formData.get("email"),
-      message: formData.get("message"),
+      body: {
+        email: formData.get("email"),
+        message: formData.get("message"),
+      },
     };
-    console.log("Form data:", data);
 
-    // try {
-    //   const response = await fetch("/send-message", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(data),
-    //   });
+    const flashMessage = document.getElementById("flash-message");
 
-    //   if (!response.ok) {
-    //     throw new Error("Network response was not ok");
-    //   }
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    //   const result = await response.json();
-    //   console.log("Message sent successfully:", result);
-    //   // Optionally, you can show a success message to the user here
-    // } catch (error) {
-    //   console.error("There was a problem with the fetch operation:", error);
-    //   // Optionally, you can show an error message to the user here
-    // }
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const result = await response.json();
+      console.log("Message sent successfully:", result);
+      // Show success message
+      flashMessage.textContent = "Message sent successfully!";
+      flashMessage.className =
+        "p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-md";
+      flashMessage.classList.remove("hidden");
+
+      // Hide success message after 10 seconds
+      setTimeout(() => {
+        flashMessage.classList.add("hidden");
+      }, 5000);
+
+      // Optionally, you can clear the form fields
+      form.reset();
+    } catch (error) {
+      console.error("There was a problem with the fetch operation:", error);
+
+      // Show error message
+      flashMessage.textContent =
+        "There was a problem sending your message. Please try again.";
+      flashMessage.className =
+        "p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-md";
+      flashMessage.classList.remove("hidden");
+
+      // Hide success message after 10 seconds
+      setTimeout(() => {
+        flashMessage.classList.add("hidden");
+      }, 5000);
+    }
   }
 
   document
