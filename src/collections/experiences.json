@@ -8,22 +8,22 @@
   },
   {
     "dates": "04/2022 – 10/2022",
-    "role": "Full Stack Developer",
-    "company": "PESAMONI LTD, Kampala, Uganda (Hybrid)",
+    "role": "Full Stack Developer (Hybrid)",
+    "company": "PESAMONI LTD, Kampala, Uganda ",
     "description": "Built frontend client to consume backend data provided through internal APIs.",
     "logo": "/assets/images/experiences/pesamoni.jpeg"
   },
   {
     "dates": "09/2019 – 09/2021",
-    "role": "Full Stack Developer",
-    "company": "COBBLESTONE ENERGY, London, United Kingdom (Hybrid)",
+    "role": "Full Stack Developer (Hybrid)",
+    "company": "COBBLESTONE ENERGY, London, United Kingdom ",
     "description": "Worked on both the backend and frontend of the internal projects.",
     "logo": "/assets/images/experiences/cobble.jpeg"
   },
   {
     "dates": "09/2018 – 09/2019",
-    "role": "Full Stack Developer",
-    "company": "ANDELA, Kampala, Uganda (Onsite)",
+    "role": "Full Stack Developer (Onsite)",
+    "company": "ANDELA, Kampala, Uganda ",
     "description": "Worked on both the backend and frontend of the internal projects.",
     "logo": "/assets/images/experiences/andela.jpeg"
   }
