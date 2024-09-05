@@ -1,30 +1,30 @@
 [
   {
     "dates": "02/2023 – 06/2023",
-    "role": "Full stack developer (Remote)",
+    "role": "Software Engineer (Remote)",
     "company": "KORAL APS, Copenhagen, Denmark",
-    "description": "Working on the core front-end project, as well as the chrome extension that consumes data generated from the frontend.",
+    "description": "Built the core front-end project, as well as the chrome extension that consumes data generated from the frontend. Also made contributions to backend Laravel API's.",
     "logo": "/assets/images/experiences/koral.png"
   },
   {
     "dates": "04/2022 – 10/2022",
-    "role": "Full Stack Developer (Hybrid)",
+    "role": "Software Engineer (Hybrid)",
     "company": "PESAMONI LTD, Kampala, Uganda ",
-    "description": "Built frontend client to consume backend data provided through internal APIs.",
+    "description": "Built frontend client to consume backend data provided through internal APIs and also contributed to the backend Nodejs API's.",
     "logo": "/assets/images/experiences/pesamoni.jpeg"
   },
   {
     "dates": "09/2019 – 09/2021",
     "role": "Full Stack Developer (Hybrid)",
     "company": "COBBLESTONE ENERGY, London, United Kingdom ",
-    "description": "Worked on both the backend and frontend of the internal projects.",
+    "description": "Worked on both the backend and frontend of the internal projects using react, svelte and Node js and Fast API as the backend technologies.",
     "logo": "/assets/images/experiences/cobble.jpeg"
   },
   {
     "dates": "09/2018 – 09/2019",
     "role": "Full Stack Developer (Onsite)",
     "company": "ANDELA, Kampala, Uganda ",
-    "description": "Worked on both the backend and frontend of the internal projects.",
+    "description": "Contributed to the backend infrastructure using (python, Node js, Java) and frontend (react, Vue) projects.",
     "logo": "/assets/images/experiences/andela.jpeg"
   }
 ]
